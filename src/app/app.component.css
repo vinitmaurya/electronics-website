@@ -1,0 +1,17 @@
+:host{
+    width: inherit;
+    height: inherit;
+}
+.main-container {
+  --primary-color: #02031e;
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+}
+main{
+    width: inherit;
+    height: inherit;
+    flex: 1 1;
+}
+

@@ -1,0 +1,22 @@
+.footer {
+    height: 50px;
+    background-color: var(--primary-color);
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+.social-media-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+.social-media-nav span img{
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+}
+

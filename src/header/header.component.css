@@ -1,0 +1,118 @@
+.header {
+  background-color: var(--primary-color);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 18px;
+}
+.header-container {
+  /* display: flex;
+      align-items: center;
+      color: white;
+      font-size: 18px; */
+}
+.header-title {
+  padding: 0px 20px;
+}
+.header-nav span {
+  padding: 0px 10px;
+}
+
+@media (min-width: 1024px) {
+}
+
+/* For screens between 768px and 1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+}
+
+/* For screens between 480px and 768px */
+@media (max-width: 768px) and (min-width: 480px) {
+
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .header-nav{
+    visibility: hidden;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--primary-color);
+}
+
+.menu-toggle {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu ul li {
+  margin: 0 10px;
+  padding: 0px 10px;
+}
+.nav-menu ul li:hover {
+  opacity: 0.8;
+}
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Toggle visibility of the menu */
+.nav-menu.active {
+  display: block;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .nav-menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 15px;
+      background-color: var(--primary-color);
+      width: 100px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 4;
+  }
+
+  .nav-menu ul {
+      flex-direction: column;
+  }
+
+  .nav-menu ul li {
+      margin: 10px 0;
+  }
+
+  .menu-toggle {
+      display: flex;
+  }
+}
