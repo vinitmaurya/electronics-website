@@ -44,7 +44,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 13px;
   background-color: var(--primary-color);
 }
 
@@ -84,7 +84,10 @@
   color: #fff;
   text-decoration: none;
 }
-
+.header-title a {
+  text-decoration: none;
+  color: #fff;  
+}
 /* Toggle visibility of the menu */
 .nav-menu.active {
   display: block;

@@ -7,6 +7,10 @@ import { DefaultComponent } from '../default/default.component';
 
 export const routes: Routes = [
     {
+        path: "",
+        component: DefaultComponent
+    },
+    {
         path: "home",
         component: HomeComponent
     },
@@ -21,9 +25,5 @@ export const routes: Routes = [
     {
         path: "products",
         component: ProductsComponent
-    },
-    {
-        path: "",
-        component: DefaultComponent
     }
 ];

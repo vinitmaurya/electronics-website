@@ -1,5 +1,5 @@
 <div class="header">
-    <span class="header-title">Nexa Electronics</span>
+    <span class="header-title" (click)="hideMenu()"><a routerLink="/">Nexa Electronics</a></span>
     <span class="ham-menu">
       <div class="navbar">
         <div class="menu-toggle" (click)="toggleMenu()">
@@ -9,10 +9,10 @@
         </div>
         <nav class="nav-menu" [class.active]="isMenuOpen">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
+                <li (click)="toggleMenu()"><a routerLink="/home">Home</a></li>
+                <li (click)="toggleMenu()"><a routerLink="/about">About</a></li>
+                <li (click)="toggleMenu()"><a routerLink="/products">Products</a></li>
+                <li (click)="toggleMenu()"><a routerLink="/contact">Contact</a></li>
             </ul>
         </nav>
     </div>
