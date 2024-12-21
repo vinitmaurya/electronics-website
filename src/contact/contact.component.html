@@ -64,7 +64,7 @@
       </div>
     </div>
     <div>
-      <form class="contact-form-container" netlify>
+      <form class="contact-form-container" name="contact" method="post" data-netlify="true">
         <br>
         <section>
           <div class="input">
@@ -96,31 +96,31 @@
               <input
                 type="radio"
                 name="subject"
-                id="general1"
-                value="General Inquiry"
+                id="components_order"
+                value="Components Order"
               />
               <label for="general1"> &nbsp;&nbsp;Components Order </label>
 <br>
               <input
                 type="radio"
                 name="subject"
-                id="general2"
-                value="General Inquiry"
+                id="bulk_order"
+                value="Bulk Order"
               />
               <label for="general2"> &nbsp;&nbsp;Bulk Order</label>
 <br>
               <input
                 type="radio"
                 name="subject"
-                id="general3"
-                value="General Inquiry"
+                id="know_more_about_us"
+                value="Know More About Us"
               />
               <label for="general3"> &nbsp;&nbsp;Know More About Us</label>
 <br>
               <input
                 type="radio"
                 name="subject"
-                id="general4"
+                id="general_inquiry"
                 value="General Inquiry"
               />
               <label for="general4"> &nbsp;&nbsp;General Inquiry</label>
@@ -142,7 +142,7 @@
         </section>
         <br>
         <section>
-          <input type="submit" value="Send Enquiry" class="submit" />
+          <button type="submit" class="submit">Send Enquiry</button>
         </section>
         <br>
       </form>
