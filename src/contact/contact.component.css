@@ -1,40 +1,25 @@
 :host {
-  height: inherit;
+  height: max-content;
   width: inherit;
   display: block;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .main-container {
-  width: inherit;
-  height: inherit;
+  width: max-content;
+  height: max-content;
   margin: auto;
   background-color: #f5faff;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.head-container {
-  text-align: center;
-  padding: 30px;
-  font-weight: 500;
-}
-.page-heading {
-  font-size: 50px;
-}
+
+
 .page-subheading {
   font-size: 18px;
   color: #717171;
 }
-.contact-container {
-  display: grid;
-  grid-template-columns: 1.5fr 2fr;
-  margin: 10px 60px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  border-radius: 5px;
-  padding: 15px;
-  height: inherit;
-}
+
 .contact-info-container {
   background: #02031e;
   border-radius: 5px;
@@ -50,13 +35,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 0px 50px;
-  height: 100%;
+  padding: 0px 20px;
+  /* height: 100%; */
 }
 .contact-header-container {
   /* text-align: center; */
   /* padding-left: 20px; */
-  width: 100%;
+  /* width: 100%; */
 }
 .contact-heading {
   text-align: center;
@@ -65,13 +50,13 @@
 }
 .contact-subheading {
   font-size: 16px;
-  padding-left: 50px;
+  padding-left: 30px;
   line-height: 20px;
   padding-top: 20px;
 }
 .contact-body-container {
-  height: 50%;
-  padding-left: 50px;
+  height: max-content;
+  padding-left: 30px;
 }
 .contact-body-element {
   padding: 20px 0px;
@@ -95,6 +80,7 @@
 section {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .input {
   font-size: 20px;
@@ -129,4 +115,44 @@ section {
 .input-style:focus{
   border-bottom: 1px solid #02031e;
 
+}
+@media (max-width: 480px) {
+  .contact-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    height: max-content;
+  }
+  .head-container {
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+  }
+  .page-heading {
+    font-size: 30px;
+  }
+} 
+@media (min-width: 768px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    margin: 20px 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    height: max-content;
+  }
+  .head-container {
+    text-align: center;
+    padding: 30px;
+    font-weight: 500;
+  }
+  .page-heading {
+    font-size: 50px;
+  }
 }
