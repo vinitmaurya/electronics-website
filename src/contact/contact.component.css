@@ -5,7 +5,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .main-container {
-  width: max-content;
+  width: inherit;
   height: max-content;
   margin: auto;
   background-color: #f5faff;
