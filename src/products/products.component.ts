@@ -1,53 +1,92 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { Product } from './products.model';
-import { CartItem } from './cart.model';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductsService } from './products.service';
+import { CartItem, Categories, Product, SubCategory } from './products.model';
+import { Category } from './products.enum';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-products',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, FormsModule],
+  providers: [ProductsService],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css'
 })
-export class ProductsComponent {
-  searchTerm: string = ''; // Search term for filtering products
-  products: Product[] = [ // Sample products array
-    { id: 1, name: 'Resistor', category: 'Passive Components', description: 'High resistance', imageUrl: 'assets/resistor.jpg', quantity: 1 },
-    { id: 2, name: 'Capacitor', category: 'Passive Components', description: 'Capacitance 100uF', imageUrl: 'assets/capacitor.jpg', quantity: 1 },
-    { id: 3, name: 'Transistor', category: 'Active Components', description: 'NPN Transistor', imageUrl: 'assets/transistor.jpg', quantity: 1 },
-    { id: 4, name: 'Inductor', category: 'Passive Components', description: 'Inductance 100mH', imageUrl: 'assets/inductor.jpg', quantity: 1 },
-    { id: 5, name: 'LED Light', category: 'LEDs', description: 'Red LED', imageUrl: 'assets/led.jpg', quantity: 1 },
-    { id: 6, name: 'Thermistor', category: 'Sensors', description: 'NTC Thermistor', imageUrl: 'assets/thermistor.jpg', quantity: 1 },
-    { id: 7, name: 'Power Supply', category: 'Power Electronics', description: 'DC 5V Power Supply', imageUrl: 'assets/power-supply.jpg', quantity: 1 },
-    { id: 8, name: 'Fuse', category: 'Circuit Protection', description: '5A Fuse', imageUrl: 'assets/fuse.jpg', quantity: 1 },
-  ];
+export class ProductsComponent implements OnInit {
+  searchTerm: string = ''; // Search term for filtering
+  selectedCategory: keyof Categories | 'All' = 'All'; // "All" is a possible value
+  productData: Categories | undefined; // Holds all category and product data
+  cart: CartItem[] = []; // Items added to the cart
+  showEnquiryForm: boolean = false; // Flag to show/hide enquiry form
+  contactDetails = { mobile: '', email: '' }; // Object to hold contact details
 
-  cart: CartItem[] = []; // Array to store items added to the cart
+  constructor(private productService: ProductsService) {}
 
-  // Filters products based on the search term
-  getFilteredProducts(): Product[] {
-    return this.products.filter((product: Product) => {
-      return (
-        product.name.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-        product.description.toLowerCase().includes(this.searchTerm.toLowerCase())
-      );
-    });
-  }
-
-  // Checks if any product in the category matches the search term
-  isCategoryVisible(category: string): boolean {
-    const filteredProducts: Product[] = this.getFilteredProducts();
-    return filteredProducts.some((product: Product) => product.category === category);
-  }
-
-  // Adds the product to the cart with the specified quantity
-  addToCart(product: Product, quantity: number): void {
-    const existingItem: CartItem | undefined = this.cart.find(
-      (item: CartItem) => item.product.id === product.id
+  ngOnInit(): void {
+    // Fetch product data on initialization
+    this.productService.getProductListingData().subscribe(
+      (data) => {
+        this.productData = data;
+        if (data) {
+          this.selectedCategory = 'All'; // Default selection is "All"
+        }
+      },
+      (err) => {
+        console.error(err);
+      }
     );
+  }
 
+  // Filters products based on search term and selected category
+  getFilteredProducts(): { [subCategory: string]: Product[] } | undefined {
+    if (!this.productData) return undefined;
+
+    const searchLower = this.searchTerm.toLowerCase();
+    let filteredSubcategories: { [subCategory: string]: Product[] } = {};
+
+    if (this.selectedCategory === 'All') {
+      // If "All" category is selected, show products from all categories
+      for (const category of Object.values(this.productData)) {
+        for (const [subCategory, products] of Object.entries(category) ) {
+          const filteredProducts = (products as Product[]).filter(
+            (product: Product) =>
+              product.name.toLowerCase().includes(searchLower)
+            //  ||
+            //   product.category.toLowerCase().includes(searchLower) ||
+            //   product.subCategory.toLowerCase().includes(searchLower)
+          );
+
+          if (filteredProducts.length > 0) {
+            filteredSubcategories[subCategory] = filteredProducts;
+          }
+        }
+      }
+    } else {
+      // Otherwise, filter products for the selected category
+      const categoryData = this.productData[this.selectedCategory];
+      for (const [subCategory, products] of Object.entries(categoryData)) {
+        const filteredProducts = products.filter(
+          (product: Product) =>
+            product.name.toLowerCase().includes(searchLower)
+          //  ||
+          //   product.category.toLowerCase().includes(searchLower) ||
+          //   product.subCategory.toLowerCase().includes(searchLower)
+        );
+
+        if (filteredProducts.length > 0) {
+          filteredSubcategories[subCategory] = filteredProducts;
+        }
+      }
+    }
+
+    return filteredSubcategories;
+  }
+
+  // Adds product to cart
+  addToCart(product: Product, quantity: number): void {
+    const existingItem = this.cart.find((item) => item.product.id === product.id);
     if (existingItem) {
       existingItem.quantity += quantity;
     } else {
@@ -55,23 +94,17 @@ export class ProductsComponent {
     }
   }
 
-  // Removes the product from the cart
+  // Removes product from cart
   removeFromCart(productId: number): void {
-    this.cart = this.cart.filter((item: CartItem) => item.product.id !== productId);
-  }
-
-  // Returns the total quantity of products in the cart
-  getTotalQuantity(): number {
-    return this.cart.reduce((total: number, item: CartItem) => total + item.quantity, 0);
-  }
-
-  // Returns the total price of products in the cart
-  getTotalPrice(): number {
-    return this.cart.reduce((total: number, item: CartItem) => total + (item.product.price || 0) * item.quantity, 0);
+    this.cart = this.cart.filter((item) => item.product.id !== productId);
   }
 
   // Placeholder for sending an enquiry
-  sendEnquiry(): void {
-    console.log('Enquiry sent');
+  submitEnquiry(): void {
+    const enquiryData = {
+      contact: this.contactDetails,
+      products: this.cart,
+    };
+    console.log(enquiryData);
   }
 }

@@ -1,0 +1,1138 @@
+{
+  "ACTIVE_COMPONENTS": {
+    "Relays": [
+      {
+        "id": 1,
+        "name": "Relays and Relay Sockets",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Relays",
+        "description": "Relays and relay sockets are used to control electrical circuits by opening or closing the contacts based on a control signal.",
+        "imageUrl": "/public/assets/products/relays_and_relay_sockets.jpg",
+        "quantity": 1,
+        "price": 2.5
+      },
+      {
+        "id": 2,
+        "name": "Reed Relays",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Relays",
+        "description": "Reed relays are used in low-power switching applications, with contacts that close when a magnetic field is applied.",
+        "imageUrl": "/public/assets/products/reed_relays.jpg",
+        "quantity": 1,
+        "price": 3.0
+      },
+      {
+        "id": 3,
+        "name": "Power Relays",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Relays",
+        "description": "Power relays are designed for high current switching applications, typically used for controlling heavy electrical loads.",
+        "imageUrl": "/public/assets/products/power_relays.jpg",
+        "quantity": 1,
+        "price": 4.5
+      },
+      {
+        "id": 4,
+        "name": "Solid State Relays",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Relays",
+        "description": "Solid-state relays use semiconductor components instead of mechanical contacts to switch electrical power.",
+        "imageUrl": "/public/assets/products/solid_state_relays.jpg",
+        "quantity": 1,
+        "price": 10.0
+      }
+    ],
+    "Diodes": [
+      {
+        "id": 5,
+        "name": "ESD Diodes",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Diodes",
+        "description": "ESD diodes are used to protect electronic components from electrostatic discharge by clamping high voltage spikes.",
+        "imageUrl": "/public/assets/products/esd_diodes.jpg",
+        "quantity": 1,
+        "price": 1.5
+      },
+      {
+        "id": 6,
+        "name": "Schottky Diodes",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Diodes",
+        "description": "Schottky diodes are known for their low forward voltage drop and fast switching speed, making them ideal for high-frequency applications.",
+        "imageUrl": "/public/assets/products/schottky_diodes.jpg",
+        "quantity": 1,
+        "price": 2.0
+      },
+      {
+        "id": 7,
+        "name": "Zener Diodes",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Diodes",
+        "description": "Zener diodes are used for voltage regulation, allowing current to flow in both directions and clamping voltage to a predefined level.",
+        "imageUrl": "/public/assets/products/zener_diodes.jpg",
+        "quantity": 1,
+        "price": 1.2
+      },
+      {
+        "id": 8,
+        "name": "Ultrafast Diodes",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Diodes",
+        "description": "Ultrafast diodes have a very fast recovery time, making them suitable for high-speed switching applications.",
+        "imageUrl": "/public/assets/products/ultrafast_diodes.jpg",
+        "quantity": 1,
+        "price": 3.0
+      },
+      {
+        "id": 9,
+        "name": "TVS Diodes",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Diodes",
+        "description": "TVS diodes (Transient Voltage Suppression) protect circuits from transient voltage spikes by clamping high-voltage pulses.",
+        "imageUrl": "/public/assets/products/tvs_diodes.jpg",
+        "quantity": 1,
+        "price": 2.0
+      },
+      {
+        "id": 10,
+        "name": "Superfast Diodes",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Diodes",
+        "description": "Superfast diodes are used in high-speed applications where the rapid recovery of reverse current is essential.",
+        "imageUrl": "/public/assets/products/superfast_diodes.jpg",
+        "quantity": 1,
+        "price": 3.2
+      },
+      {
+        "id": 11,
+        "name": "HV Diodes",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Diodes",
+        "description": "High-voltage (HV) diodes are designed for use in high-power applications where high reverse voltage protection is required.",
+        "imageUrl": "/public/assets/products/hv_diodes.jpg",
+        "quantity": 1,
+        "price": 4.5
+      },
+      {
+        "id": 12,
+        "name": "Trigger Diodes",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Diodes",
+        "description": "Trigger diodes are used to control the switching of thyristors or triacs by providing a sharp trigger pulse.",
+        "imageUrl": "/public/assets/products/trigger_diodes.jpg",
+        "quantity": 1,
+        "price": 2.8
+      }
+    ],
+    "Bridge Rectifiers": [
+      {
+        "id": 13,
+        "name": "Single Phase and Three Phase Bridge Rectifiers",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Bridge Rectifiers",
+        "description": "Bridge rectifiers are used to convert AC voltage to DC by using four diodes arranged in a bridge configuration.",
+        "imageUrl": "/public/assets/products/single_and_three_phase_bridge_rectifiers.jpg",
+        "quantity": 1,
+        "price": 5.0
+      },
+      {
+        "id": 14,
+        "name": "Through Hole and SMD Bridge Rectifiers",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Bridge Rectifiers",
+        "description": "These bridge rectifiers come in both through-hole and surface-mount versions for different assembly requirements.",
+        "imageUrl": "/public/assets/products/through_hole_and_smd_bridge_rectifiers.jpg",
+        "quantity": 1,
+        "price": 4.0
+      },
+      {
+        "id": 15,
+        "name": "Square & In-Line Bridge Rectifiers",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Bridge Rectifiers",
+        "description": "Square and in-line bridge rectifiers are used for compact and efficient power conversion in low-power applications.",
+        "imageUrl": "/public/assets/products/square_and_inline_bridge_rectifiers.jpg",
+        "quantity": 1,
+        "price": 3.5
+      }
+    ],
+    "Communication ICs": [
+      {
+        "id": 16,
+        "name": "RS485 Transceivers",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Communication ICs",
+        "description": "RS485 transceivers are used for long-distance and differential data communication in industrial and automotive systems.",
+        "imageUrl": "/public/assets/products/rs485_transceivers.jpg",
+        "quantity": 1,
+        "price": 2.8
+      },
+      {
+        "id": 17,
+        "name": "RS232 Transceivers",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Communication ICs",
+        "description": "RS232 transceivers are used for short-distance communication in consumer electronics and legacy systems.",
+        "imageUrl": "/public/assets/products/rs232_transceivers.jpg",
+        "quantity": 1,
+        "price": 1.5
+      },
+      {
+        "id": 18,
+        "name": "CAN Chips",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Communication ICs",
+        "description": "CAN chips are used in Controller Area Network (CAN) bus systems, typically used for communication in automotive and industrial applications.",
+        "imageUrl": "/public/assets/products/can_chips.jpg",
+        "quantity": 1,
+        "price": 4.0
+      },
+      {
+        "id": 19,
+        "name": "485 Isolation module",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Communication ICs",
+        "description": "485 isolation modules are used to isolate RS485 communication signals in industrial applications, protecting against voltage spikes and noise.",
+        "imageUrl": "/public/assets/products/485_isolation_module.jpg",
+        "quantity": 1,
+        "price": 3.0
+      }
+    ],
+    "Voltage Regulators": [
+      {
+        "id": 20,
+        "name": "Voltage Regulators",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Voltage Regulators",
+        "description": "Voltage regulators are used to maintain a constant voltage level to electronic circuits despite fluctuations in input voltage.",
+        "imageUrl": "/public/assets/products/voltage_regulators.jpg",
+        "quantity": 1,
+        "price": 5.5
+      }
+    ],
+    "Transistors": [
+      {
+        "id": 21,
+        "name": "Transistors",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Transistors",
+        "description": "Transistors are semiconductor devices used for amplification and switching of electronic signals.",
+        "imageUrl": "/public/assets/products/transistors.jpg",
+        "quantity": 1,
+        "price": 2.5
+      }
+    ],
+    "MOSFETs": [
+      {
+        "id": 22,
+        "name": "MOSFETs",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "MOSFETs",
+        "description": "MOSFETs are metal-oxide-semiconductor field-effect transistors used in switching and amplifying electronic signals.",
+        "imageUrl": "/public/assets/products/mosfets.jpg",
+        "quantity": 1,
+        "price": 3.5
+      }
+    ],
+    "Crystal": [
+      {
+        "id": 23,
+        "name": "Crystal",
+        "category": "ACTIVE_COMPONENTS",
+        "sub-category": "Crystal",
+        "description": "Crystals are used in oscillators to provide precise frequency control in electronic circuits.",
+        "imageUrl": "/public/assets/products/crystals.jpg",
+        "quantity": 1,
+        "price": 1.8
+      }
+    ]
+  },
+  "PASSIVE_COMPONENTS": {
+    "Resistors": [
+      {
+        "id": 1,
+        "name": "Metal Film Resistors",
+        "category": "Passive Components",
+        "sub-category": "Resistors",
+        "description": "Metal film resistors are known for their high precision and stability, widely used in high-frequency applications.",
+        "imageUrl": "/public/assets/products/metal_film_resistors.jpg",
+        "quantity": 1,
+        "price": 2.5
+      },
+      {
+        "id": 2,
+        "name": "Carbon Film Resistors",
+        "category": "Passive Components",
+        "sub-category": "Resistors",
+        "description": "Carbon film resistors offer good performance in standard applications and are more cost-effective.",
+        "imageUrl": "/public/assets/products/carbon_film_resistors.jpg",
+        "quantity": 1,
+        "price": 1.5
+      },
+      {
+        "id": 3,
+        "name": "Power Resistors",
+        "category": "Passive Components",
+        "sub-category": "Resistors",
+        "description": "Power resistors are designed to handle high power levels and are typically used in power supplies and electrical circuits.",
+        "imageUrl": "/public/assets/products/power_resistors.jpg",
+        "quantity": 1,
+        "price": 3.0
+      },
+      {
+        "id": 4,
+        "name": "Metal Glazed Resistors",
+        "category": "Passive Components",
+        "sub-category": "Resistors",
+        "description": "Metal glazed resistors are known for their durability, high power rating, and resistance to environmental factors.",
+        "imageUrl": "/public/assets/products/metal_glazed_resistors.jpg",
+        "quantity": 1,
+        "price": 4.0
+      },
+      {
+        "id": 5,
+        "name": "Metal Oxide Resistors",
+        "category": "Passive Components",
+        "sub-category": "Resistors",
+        "description": "Metal oxide resistors are highly durable and designed to handle high-temperature environments.",
+        "imageUrl": "/public/assets/products/metal_oxide_resistors.jpg",
+        "quantity": 1,
+        "price": 3.5
+      },
+      {
+        "id": 6,
+        "name": "Wire Wound Resistors",
+        "category": "Passive Components",
+        "sub-category": "Resistors",
+        "description": "Wire wound resistors are known for their accuracy and precision, commonly used in power applications.",
+        "imageUrl": "/public/assets/products/wire_wound_resistors.jpg",
+        "quantity": 1,
+        "price": 5.0
+      },
+      {
+        "id": 7,
+        "name": "Chip Resistors Thin and Thick Film",
+        "category": "Passive Components",
+        "sub-category": "Resistors",
+        "description": "Chip resistors are compact, available in both thin and thick film options, ideal for surface-mount applications.",
+        "imageUrl": "/public/assets/products/chip_resistors.jpg",
+        "quantity": 1,
+        "price": 0.5
+      },
+      {
+        "id": 8,
+        "name": "Automotive Grade Resistors",
+        "category": "Passive Components",
+        "sub-category": "Resistors",
+        "description": "Automotive grade resistors are specifically designed to withstand the harsh conditions of automotive environments.",
+        "imageUrl": "/public/assets/products/automotive_grade_resistors.jpg",
+        "quantity": 1,
+        "price": 2.8
+      }
+    ],
+    "Capacitors": [
+      {
+        "id": 9,
+        "name": "Metalised Polyester Capacitors",
+        "category": "Passive Components",
+        "sub-category": "Capacitors",
+        "description": "Metalized polyester capacitors are widely used in electronic circuits due to their affordability and stable performance.",
+        "imageUrl": "/public/assets/products/metalised_polyester_capacitors.jpg",
+        "quantity": 1,
+        "price": 0.8
+      },
+      {
+        "id": 10,
+        "name": "Ceramic Disc HV Capacitors",
+        "category": "Passive Components",
+        "sub-category": "Capacitors",
+        "description": "Ceramic disc HV capacitors are high-voltage components used in industrial applications, with robust insulation.",
+        "imageUrl": "/public/assets/products/ceramic_disc_hv_capacitors.jpg",
+        "quantity": 1,
+        "price": 2.0
+      },
+      {
+        "id": 11,
+        "name": "MLCC Capacitors",
+        "category": "Passive Components",
+        "sub-category": "Capacitors",
+        "description": "Multi-layer ceramic capacitors (MLCC) are popular for their high capacitance in small packages and broad applications.",
+        "imageUrl": "/public/assets/products/mlcc_capacitors.jpg",
+        "quantity": 1,
+        "price": 1.2
+      },
+      {
+        "id": 12,
+        "name": "X2 Capacitors",
+        "category": "Passive Components",
+        "sub-category": "Capacitors",
+        "description": "X2 capacitors are designed for noise suppression and protection against electrical spikes in AC power circuits.",
+        "imageUrl": "/public/assets/products/x2_capacitors.jpg",
+        "quantity": 1,
+        "price": 1.8
+      },
+      {
+        "id": 13,
+        "name": "Film Foil Capacitors",
+        "category": "Passive Components",
+        "sub-category": "Capacitors",
+        "description": "Film foil capacitors offer superior stability, low loss, and high-voltage resistance, suitable for high-frequency circuits.",
+        "imageUrl": "/public/assets/products/film_foil_capacitors.jpg",
+        "quantity": 1,
+        "price": 2.5
+      },
+      {
+        "id": 14,
+        "name": "Metalized Polypropylene Capacitors",
+        "category": "Passive Components",
+        "sub-category": "Capacitors",
+        "description": "Metalized polypropylene capacitors are commonly used in applications requiring high stability and low ESR.",
+        "imageUrl": "/public/assets/products/metalized_polypropylene_capacitors.jpg",
+        "quantity": 1,
+        "price": 3.0
+      },
+      {
+        "id": 15,
+        "name": "Snubber / DC Link & IGBT Capacitors",
+        "category": "Passive Components",
+        "sub-category": "Capacitors",
+        "description": "Snubber capacitors help suppress voltage spikes in high-power circuits, particularly in industrial and power electronics.",
+        "imageUrl": "/public/assets/products/snubber_dc_link_igbt_capacitors.jpg",
+        "quantity": 1,
+        "price": 4.0
+      },
+      {
+        "id": 16,
+        "name": "Chip Capacitors",
+        "category": "Passive Components",
+        "sub-category": "Capacitors",
+        "description": "Chip capacitors are compact components ideal for surface-mount technology (SMT) applications.",
+        "imageUrl": "/public/assets/products/chip_capacitors.jpg",
+        "quantity": 1,
+        "price": 0.6
+      }
+    ],
+    "Inductors": [
+      {
+        "id": 17,
+        "name": "RF Ceramic Inductor",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "RF ceramic inductors are designed for radio frequency applications where low loss is essential.",
+        "imageUrl": "/public/assets/products/rf_ceramic_inductor.jpg",
+        "quantity": 1,
+        "price": 2.5
+      },
+      {
+        "id": 18,
+        "name": "Ferrite Chip Inductor",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "Ferrite chip inductors are compact, cost-effective components used in high-frequency circuits and noise filtering.",
+        "imageUrl": "/public/assets/products/ferrite_chip_inductor.jpg",
+        "quantity": 1,
+        "price": 1.5
+      },
+      {
+        "id": 19,
+        "name": "Miniature Power Inductor",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "Miniature power inductors are small in size but capable of handling power efficiently in compact devices.",
+        "imageUrl": "/public/assets/products/miniature_power_inductor.jpg",
+        "quantity": 1,
+        "price": 3.0
+      },
+      {
+        "id": 20,
+        "name": "Power Choke Power Inductor",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "Power choke inductors are used in power supply systems to suppress high-frequency noise.",
+        "imageUrl": "/public/assets/products/power_choke_power_inductor.jpg",
+        "quantity": 1,
+        "price": 4.5
+      },
+      {
+        "id": 21,
+        "name": "SMD Metal Alloy Power Inductor",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "SMD metal alloy power inductors offer high power density and are used in space-constrained devices.",
+        "imageUrl": "/public/assets/products/smd_metal_alloy_power_inductor.jpg",
+        "quantity": 1,
+        "price": 5.5
+      },
+      {
+        "id": 22,
+        "name": "Shielding Power Inductor",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "Shielding power inductors are used to protect circuits from electromagnetic interference.",
+        "imageUrl": "/public/assets/products/shielding_power_inductor.jpg",
+        "quantity": 1,
+        "price": 3.5
+      },
+      {
+        "id": 23,
+        "name": "Non-Shielding Power Inductor",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "Non-shielding power inductors are used in applications where electromagnetic interference is not a concern.",
+        "imageUrl": "/public/assets/products/non_shielding_power_inductor.jpg",
+        "quantity": 1,
+        "price": 2.8
+      },
+      {
+        "id": 24,
+        "name": "Wire Wound Power Inductor",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "Wire wound power inductors provide high inductance values and are used in power management circuits.",
+        "imageUrl": "/public/assets/products/wire_wound_power_inductor.jpg",
+        "quantity": 1,
+        "price": 4.0
+      },
+      {
+        "id": 25,
+        "name": "DIP Power Inductor",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "DIP power inductors are dual in-line package inductors used in through-hole mounting applications.",
+        "imageUrl": "/public/assets/products/dip_power_inductor.jpg",
+        "quantity": 1,
+        "price": 5.0
+      },
+      {
+        "id": 26,
+        "name": "EMI Bead (CBM Series)",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "EMI beads are used to filter high-frequency noise and prevent electromagnetic interference in electronic devices.",
+        "imageUrl": "/public/assets/products/emi_bead_cbm_series.jpg",
+        "quantity": 1,
+        "price": 2.3
+      },
+      {
+        "id": 27,
+        "name": "Common Mode Filter(CM Series)",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "Common mode filters help reduce noise in circuits by filtering common-mode signals.",
+        "imageUrl": "/public/assets/products/common_mode_filter_cm_series.jpg",
+        "quantity": 1,
+        "price": 3.2
+      },
+      {
+        "id": 28,
+        "name": "Automotive Grade Inductor",
+        "category": "Passive Components",
+        "sub-category": "Inductors",
+        "description": "Automotive grade inductors are designed for automotive applications and meet the stringent industry standards.",
+        "imageUrl": "/public/assets/products/automotive_grade_inductor.jpg",
+        "quantity": 1,
+        "price": 4.8
+      }
+    ],
+    "Fuses": [
+      {
+        "id": 29,
+        "name": "Glass Fuses UL Approved & Non UL",
+        "category": "Passive Components",
+        "sub-category": "Fuses",
+        "description": "Glass fuses are commonly used for overcurrent protection in low-voltage applications, available in both UL-approved and non-UL versions.",
+        "imageUrl": "/public/assets/products/glass_fuses_ul_approved_non_ul.jpg",
+        "quantity": 1,
+        "price": 1.0
+      },
+      {
+        "id": 30,
+        "name": "Ceramic Fuses",
+        "category": "Passive Components",
+        "sub-category": "Fuses",
+        "description": "Ceramic fuses offer superior high-voltage protection and are used in high-power applications.",
+        "imageUrl": "/public/assets/products/ceramic_fuses.jpg",
+        "quantity": 1,
+        "price": 1.8
+      },
+      {
+        "id": 31,
+        "name": "SMD Fuses",
+        "category": "Passive Components",
+        "sub-category": "Fuses",
+        "description": "SMD fuses are used in surface-mount technology (SMT) for compact electronic devices.",
+        "imageUrl": "/public/assets/products/smd_fuses.jpg",
+        "quantity": 1,
+        "price": 0.9
+      },
+      {
+        "id": 32,
+        "name": "Special Fuses",
+        "category": "Passive Components",
+        "sub-category": "Fuses",
+        "description": "Special fuses are designed for specific applications, such as high-current or high-voltage circuits.",
+        "imageUrl": "/public/assets/products/special_fuses.jpg",
+        "quantity": 1,
+        "price": 3.0
+      },
+      {
+        "id": 33,
+        "name": "Thermal Fuses",
+        "category": "Passive Components",
+        "sub-category": "Fuses",
+        "description": "Thermal fuses are used to protect circuits from overheating, often in appliances and industrial machines.",
+        "imageUrl": "/public/assets/products/thermal_fuses.jpg",
+        "quantity": 1,
+        "price": 2.0
+      },
+      {
+        "id": 34,
+        "name": "Blade Fuses",
+        "category": "Passive Components",
+        "sub-category": "Fuses",
+        "description": "Blade fuses are used for protection in automotive and electrical circuits.",
+        "imageUrl": "/public/assets/products/blade_fuses.jpg",
+        "quantity": 1,
+        "price": 1.5
+      },
+      {
+        "id": 35,
+        "name": "Glass Fuses Fast & Slow Blow",
+        "category": "Passive Components",
+        "sub-category": "Fuses",
+        "description": "Glass fuses are available in both fast blow and slow blow versions, providing protection from short circuits.",
+        "imageUrl": "/public/assets/products/glass_fuses_fast_slow_blow.jpg",
+        "quantity": 1,
+        "price": 2.0
+      }
+    ],
+    "Switches": [
+      {
+        "id": 36,
+        "name": "Rocker Switches",
+        "category": "Passive Components",
+        "sub-category": "Switches",
+        "description": "Rocker switches are commonly used for power control in a variety of applications, from consumer electronics to industrial equipment.",
+        "imageUrl": "/public/assets/products/rocker_switches.jpg",
+        "quantity": 1,
+        "price": 2.0
+      },
+      {
+        "id": 37,
+        "name": "Rotary/Limit /Micro Switches",
+        "category": "Passive Components",
+        "sub-category": "Switches",
+        "description": "Rotary and limit switches are used in position sensing and control applications, while micro switches are used for precise switching.",
+        "imageUrl": "/public/assets/products/rotary_limit_micro_switches.jpg",
+        "quantity": 1,
+        "price": 2.5
+      },
+      {
+        "id": 38,
+        "name": "Toggle/ Rotary Switches",
+        "category": "Passive Components",
+        "sub-category": "Switches",
+        "description": "Toggle and rotary switches provide manual control for circuits, ideal for switching on/off or for adjusting settings.",
+        "imageUrl": "/public/assets/products/toggle_rotary_switches.jpg",
+        "quantity": 1,
+        "price": 1.5
+      },
+      {
+        "id": 39,
+        "name": "Micro Reset / Thumbwheel Switches",
+        "category": "Passive Components",
+        "sub-category": "Switches",
+        "description": "Micro reset and thumbwheel switches are compact and used in applications requiring manual resetting or user input.",
+        "imageUrl": "/public/assets/products/micro_reset_thumbwheel_switches.jpg",
+        "quantity": 1,
+        "price": 1.8
+      }
+    ],
+    "LED Displays": [
+      {
+        "id": 40,
+        "name": "SMD / PLCC LEDS",
+        "category": "Passive Components",
+        "sub-category": "LED Displays",
+        "description": "SMD and PLCC LEDs are small, energy-efficient light sources used in display and indicator applications.",
+        "imageUrl": "/public/assets/products/smd_plcc_leds.jpg",
+        "quantity": 1,
+        "price": 0.5
+      },
+      {
+        "id": 41,
+        "name": "High Power LEDS",
+        "category": "Passive Components",
+        "sub-category": "LED Displays",
+        "description": "High power LEDs are bright, durable light sources used in automotive lighting, streetlights, and high-intensity displays.",
+        "imageUrl": "/public/assets/products/high_power_leds.jpg",
+        "quantity": 1,
+        "price": 1.5
+      },
+      {
+        "id": 42,
+        "name": "Traffic Light LEDS",
+        "category": "Passive Components",
+        "sub-category": "LED Displays",
+        "description": "Traffic light LEDs are high-visibility components specifically designed for use in traffic signal systems.",
+        "imageUrl": "/public/assets/products/traffic_light_leds.jpg",
+        "quantity": 1,
+        "price": 3.0
+      },
+      {
+        "id": 43,
+        "name": "Seven Segment Displays",
+        "category": "Passive Components",
+        "sub-category": "LED Displays",
+        "description": "Seven-segment displays are used in clocks, calculators, and other digital readouts, offering clear and easy-to-read numeric displays.",
+        "imageUrl": "/public/assets/products/seven_segment_displays.jpg",
+        "quantity": 1,
+        "price": 2.0
+      },
+      {
+        "id": 44,
+        "name": "Power LEDS",
+        "category": "Passive Components",
+        "sub-category": "LED Displays",
+        "description": "Power LEDs provide bright illumination and are commonly used in flashlights, automotive lighting, and other high-power applications.",
+        "imageUrl": "/public/assets/products/power_leds.jpg",
+        "quantity": 1,
+        "price": 1.8
+      },
+      {
+        "id": 45,
+        "name": "COB LEDS",
+        "category": "Passive Components",
+        "sub-category": "LED Displays",
+        "description": "COB LEDs are a compact, highly efficient lighting solution used in high-brightness applications.",
+        "imageUrl": "/public/assets/products/cob_leds.jpg",
+        "quantity": 1,
+        "price": 3.5
+      },
+      {
+        "id": 46,
+        "name": "Super Flux LEDS",
+        "category": "Passive Components",
+        "sub-category": "LED Displays",
+        "description": "Super flux LEDs offer high-intensity illumination and are often used in automotive lighting and large displays.",
+        "imageUrl": "/public/assets/products/super_flux_leds.jpg",
+        "quantity": 1,
+        "price": 4.0
+      },
+      {
+        "id": 47,
+        "name": "3MM & 5MM Diffused LEDS",
+        "category": "Passive Components",
+        "sub-category": "LED Displays",
+        "description": "These LEDs come in 3mm and 5mm sizes and offer diffused light for various lighting and display applications.",
+        "imageUrl": "/public/assets/products/3mm_5mm_diffused_leds.jpg",
+        "quantity": 1,
+        "price": 0.8
+      },
+      {
+        "id": 48,
+        "name": "Water Clear LEDS",
+        "category": "Passive Components",
+        "sub-category": "LED Displays",
+        "description": "Water clear LEDs provide focused light and are used in indicators, displays, and automotive applications.",
+        "imageUrl": "/public/assets/products/water_clear_leds.jpg",
+        "quantity": 1,
+        "price": 1.2
+      },
+      {
+        "id": 49,
+        "name": "LED Indicators",
+        "category": "Passive Components",
+        "sub-category": "LED Displays",
+        "description": "LED indicators are versatile components used in various devices to signal power or function.",
+        "imageUrl": "/public/assets/products/led_indicators.jpg",
+        "quantity": 1,
+        "price": 2.0
+      }
+    ],
+    "Relays": [
+      {
+        "id": 50,
+        "name": "Relays and Relay Sockets",
+        "category": "Passive Components",
+        "sub-category": "Relays",
+        "description": "Relays are electrically operated switches that control high-voltage circuits with low-voltage signals.",
+        "imageUrl": "/public/assets/products/relays_and_relay_sockets.jpg",
+        "quantity": 1,
+        "price": 3.0
+      },
+      {
+        "id": 51,
+        "name": "Reed Relays",
+        "category": "Passive Components",
+        "sub-category": "Relays",
+        "description": "Reed relays are small, highly reliable relays used in low-power, high-frequency applications.",
+        "imageUrl": "/public/assets/products/reed_relays.jpg",
+        "quantity": 1,
+        "price": 2.5
+      },
+      {
+        "id": 52,
+        "name": "Power Relays",
+        "category": "Passive Components",
+        "sub-category": "Relays",
+        "description": "Power relays are used for switching high-power loads and are suitable for automotive and industrial applications.",
+        "imageUrl": "/public/assets/products/power_relays.jpg",
+        "quantity": 1,
+        "price": 4.0
+      },
+      {
+        "id": 53,
+        "name": "Solid State Relays",
+        "category": "Passive Components",
+        "sub-category": "Relays",
+        "description": "Solid state relays use semiconductor devices to switch circuits without moving parts, offering faster operation and longer life.",
+        "imageUrl": "/public/assets/products/solid_state_relays.jpg",
+        "quantity": 1,
+        "price": 5.0
+      }
+    ],
+    "Diodes": [
+      {
+        "id": 54,
+        "name": "ESD Diodes",
+        "category": "Passive Components",
+        "sub-category": "Diodes",
+        "description": "ESD diodes protect sensitive electronics from electrostatic discharge (ESD) by clamping voltage spikes.",
+        "imageUrl": "/public/assets/products/esd_diodes.jpg",
+        "quantity": 1,
+        "price": 0.3
+      },
+      {
+        "id": 55,
+        "name": "Schottky Diodes",
+        "category": "Passive Components",
+        "sub-category": "Diodes",
+        "description": "Schottky diodes are fast-switching diodes with low forward voltage drop, making them ideal for power applications.",
+        "imageUrl": "/public/assets/products/schottky_diodes.jpg",
+        "quantity": 1,
+        "price": 0.5
+      },
+      {
+        "id": 56,
+        "name": "Zener Diodes",
+        "category": "Passive Components",
+        "sub-category": "Diodes",
+        "description": "Zener diodes are used for voltage regulation, allowing current to flow in both directions.",
+        "imageUrl": "/public/assets/products/zener_diodes.jpg",
+        "quantity": 1,
+        "price": 0.4
+      },
+      {
+        "id": 57,
+        "name": "Ultrafast Diodes",
+        "category": "Passive Components",
+        "sub-category": "Diodes",
+        "description": "Ultrafast diodes have a very low recovery time, making them suitable for high-speed switching applications.",
+        "imageUrl": "/public/assets/products/ultrafast_diodes.jpg",
+        "quantity": 1,
+        "price": 0.7
+      },
+      {
+        "id": 58,
+        "name": "TVS Diodes",
+        "category": "Passive Components",
+        "sub-category": "Diodes",
+        "description": "TVS diodes are designed to protect electronic circuits from transient voltage spikes.",
+        "imageUrl": "/public/assets/products/tvs_diodes.jpg",
+        "quantity": 1,
+        "price": 0.6
+      },
+      {
+        "id": 59,
+        "name": "Superfast Diodes",
+        "category": "Passive Components",
+        "sub-category": "Diodes",
+        "description": "Superfast diodes are designed for quick response times, suitable for high-speed rectification.",
+        "imageUrl": "/public/assets/products/superfast_diodes.jpg",
+        "quantity": 1,
+        "price": 0.8
+      },
+      {
+        "id": 60,
+        "name": "HV Diodes",
+        "category": "Passive Components",
+        "sub-category": "Diodes",
+        "description": "HV diodes are used in high-voltage applications to rectify or limit voltages.",
+        "imageUrl": "/public/assets/products/hv_diodes.jpg",
+        "quantity": 1,
+        "price": 1.0
+      },
+      {
+        "id": 61,
+        "name": "Trigger Diodes",
+        "category": "Passive Components",
+        "sub-category": "Diodes",
+        "description": "Trigger diodes are used in triggering circuits, including timing and control applications.",
+        "imageUrl": "/public/assets/products/trigger_diodes.jpg",
+        "quantity": 1,
+        "price": 0.9
+      }
+    ],
+    "Power Cords": [
+      {
+        "id": 62,
+        "name": "Power Cords",
+        "category": "Passive Components",
+        "sub-category": "Power Cords",
+        "description": "Power cords are essential for connecting electrical devices to a power source.",
+        "imageUrl": "/public/assets/products/power_cords.jpg",
+        "quantity": 1,
+        "price": 1.0
+      }
+    ],
+    "Fuse Holders": [
+      {
+        "id": 63,
+        "name": "Fuse Holders",
+        "category": "Passive Components",
+        "sub-category": "Fuse Holders",
+        "description": "Fuse holders are used to secure fuses in electrical circuits, ensuring reliable operation.",
+        "imageUrl": "/public/assets/products/fuse_holders.jpg",
+        "quantity": 1,
+        "price": 1.5
+      }
+    ],
+    "Banana Sockets": [
+      {
+        "id": 64,
+        "name": "Banana Sockets",
+        "category": "Passive Components",
+        "sub-category": "Banana Sockets",
+        "description": "Banana sockets are used for connecting banana plugs in electronic and electrical equipment.",
+        "imageUrl": "/public/assets/products/banana_sockets.jpg",
+        "quantity": 1,
+        "price": 0.6
+      }
+    ],
+    "Banana Plugs": [
+      {
+        "id": 65,
+        "name": "Banana Plugs",
+        "category": "Passive Components",
+        "sub-category": "Banana Plugs",
+        "description": "Banana plugs are used for easy and secure connections to banana sockets.",
+        "imageUrl": "/public/assets/products/banana_plugs.jpg",
+        "quantity": 1,
+        "price": 0.7
+      }
+    ],
+    "MOVs": [
+      {
+        "id": 66,
+        "name": "MOVs",
+        "category": "Passive Components",
+        "sub-category": "MOVs",
+        "description": "MOVs (Metal Oxide Varistors) protect circuits from voltage spikes by clamping excess voltage.",
+        "imageUrl": "/public/assets/products/movs.jpg",
+        "quantity": 1,
+        "price": 1.2
+      }
+    ]
+  },
+  "SENSORS": {
+    "Temperature Sensors": [
+      {
+        "id": 1,
+        "name": "Temperature Sensors",
+        "category": "SENSORS",
+        "sub-category": "Temperature Sensors",
+        "description": "Temperature sensors detect and measure temperature changes in various environments.",
+        "imageUrl": "/public/assets/products/temperature_sensors.jpg",
+        "quantity": 1,
+        "price": 15.99
+      }
+    ],
+    "Pressure Sensors": [
+      {
+        "id": 2,
+        "name": "Pressure Sensors",
+        "category": "SENSORS",
+        "sub-category": "Pressure Sensors",
+        "description": "Pressure sensors are used to measure the pressure of gases or liquids in various applications.",
+        "imageUrl": "/public/assets/products/pressure_sensors.jpg",
+        "quantity": 1,
+        "price": 20.50
+      }
+    ],
+    "Opto Sensor": [
+      {
+        "id": 3,
+        "name": "Opto Sensor",
+        "category": "SENSORS",
+        "sub-category": "Opto Sensor",
+        "description": "Opto sensors detect objects or measure physical properties using light.",
+        "imageUrl": "/public/assets/products/opto_sensor.jpg",
+        "quantity": 1,
+        "price": 25.75
+      }
+    ]
+  },
+  "POWER_ELECTRONICS": {
+    "Solid State Relays": [
+      {
+        "id": 4,
+        "name": "Solid State Relays",
+        "category": "POWER_ELECTRONICS",
+        "sub-category": "Solid State Relays",
+        "description": "Solid State Relays use semiconductor components to switch electrical circuits.",
+        "imageUrl": "/public/assets/products/solid_state_relays.jpg",
+        "quantity": 1,
+        "price": 50.99
+      }
+    ],
+    "HRC Fuses": [
+      {
+        "id": 5,
+        "name": "HRC Fuses",
+        "category": "POWER_ELECTRONICS",
+        "sub-category": "HRC Fuses",
+        "description": "HRC fuses are high rupturing capacity fuses used for protection against overloads and short circuits.",
+        "imageUrl": "/public/assets/products/hrc_fuses.jpg",
+        "quantity": 1,
+        "price": 10.25
+      }
+    ],
+    "Bridge Rectifiers": [
+      {
+        "id": 6,
+        "name": "Bridge Rectifiers",
+        "category": "POWER_ELECTRONICS",
+        "sub-category": "Bridge Rectifiers",
+        "description": "Bridge rectifiers convert AC to DC using four diodes arranged in a bridge configuration.",
+        "imageUrl": "/public/assets/products/bridge_rectifiers.jpg",
+        "quantity": 1,
+        "price": 7.99
+      }
+    ],
+    "Thermal Pads": [
+      {
+        "id": 7,
+        "name": "Thermal Pads",
+        "category": "POWER_ELECTRONICS",
+        "sub-category": "Thermal Pads",
+        "description": "Thermal pads are used to dissipate heat between components and heatsinks.",
+        "imageUrl": "/public/assets/products/thermal_pads.jpg",
+        "quantity": 1,
+        "price": 3.99
+      }
+    ]
+  },
+  "LEDs": {
+    "LEDs for Indicators": [
+      {
+        "id": 8,
+        "name": "LEDs for Indicators",
+        "category": "LEDs",
+        "sub-category": "LEDs for Indicators",
+        "description": "LEDs designed for indicator lighting applications, often used in dashboards and signaling.",
+        "imageUrl": "/public/assets/products/leds_for_indicators.jpg",
+        "quantity": 1,
+        "price": 1.49
+      }
+    ],
+    "LEDs for Lighting": [
+      {
+        "id": 9,
+        "name": "LEDs for Lighting",
+        "category": "LEDs",
+        "sub-category": "LEDs for Lighting",
+        "description": "LEDs specifically designed for general lighting purposes, providing energy-efficient illumination.",
+        "imageUrl": "/public/assets/products/leds_for_lighting.jpg",
+        "quantity": 1,
+        "price": 3.99
+      }
+    ],
+    "LEDs for Lens/Reflectors": [
+      {
+        "id": 10,
+        "name": "LEDs for Lens/Reflectors",
+        "category": "LEDs",
+        "sub-category": "LEDs for Lens/Reflectors",
+        "description": "LEDs used in combination with lenses and reflectors to achieve specific lighting patterns.",
+        "imageUrl": "/public/assets/products/leds_for_lens_reflectors.jpg",
+        "quantity": 1,
+        "price": 4.50
+      }
+    ],
+    "LEDs for Drivers": [
+      {
+        "id": 11,
+        "name": "LEDs for Drivers",
+        "category": "LEDs",
+        "sub-category": "LEDs for Drivers",
+        "description": "LEDs that are specifically designed to work with LED drivers to ensure optimal performance.",
+        "imageUrl": "/public/assets/products/leds_for_drivers.jpg",
+        "quantity": 1,
+        "price": 5.99
+      }
+    ]
+  },
+  "CIRCUIT_PROTECTION": {
+    "Resettable fuses": [
+      {
+        "id": 12,
+        "name": "Resettable fuses",
+        "category": "CIRCUIT_PROTECTION",
+        "sub-category": "Resettable fuses",
+        "description": "Resettable fuses automatically reset after being triggered by an overcurrent condition.",
+        "imageUrl": "/public/assets/products/resettable_fuses.jpg",
+        "quantity": 1,
+        "price": 2.99
+      }
+    ],
+    "MOVs": [
+      {
+        "id": 13,
+        "name": "MOVs",
+        "category": "CIRCUIT_PROTECTION",
+        "sub-category": "MOVs",
+        "description": "MOVs (Metal Oxide Varistors) protect against voltage spikes by absorbing excess energy.",
+        "imageUrl": "/public/assets/products/movs.jpg",
+        "quantity": 1,
+        "price": 4.49
+      }
+    ],
+    "TMOVs": [
+      {
+        "id": 14,
+        "name": "TMOVs",
+        "category": "CIRCUIT_PROTECTION",
+        "sub-category": "TMOVs",
+        "description": "TMOVs (Thermally Protected MOVs) provide surge protection with a built-in thermal fuse.",
+        "imageUrl": "/public/assets/products/tmovs.jpg",
+        "quantity": 1,
+        "price": 5.75
+      }
+    ],
+    "Lightning protection modules": [
+      {
+        "id": 15,
+        "name": "Lightning protection modules",
+        "category": "CIRCUIT_PROTECTION",
+        "sub-category": "Lightning protection modules",
+        "description": "Modules designed to protect circuits from lightning-induced surges.",
+        "imageUrl": "/public/assets/products/lightning_protection_modules.jpg",
+        "quantity": 1,
+        "price": 8.99
+      }
+    ],
+    "Gas Discharge Tubes": [
+      {
+        "id": 16,
+        "name": "Gas Discharge Tubes",
+        "category": "CIRCUIT_PROTECTION",
+        "sub-category": "Gas Discharge Tubes",
+        "description": "Gas discharge tubes protect circuits from high-voltage spikes by discharging the energy.",
+        "imageUrl": "/public/assets/products/gas_discharge_tubes.jpg",
+        "quantity": 1,
+        "price": 7.25
+      }
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+{
+    "ACTIVE_COMPONENTS": {
+        "Relays": [
+            "Relays and Relay Sockets",
+            "Reed Relays",
+            "Power Relays",
+            "Solid State Relays"
+        ],
+        "Diodes": [
+            "ESD Diodes",
+            "Schottky Diodes",
+            "Zener Diodes",
+            "Ultrafast Diodes",
+            "TVS Diodes",
+            "Superfast Diodes",
+            "HV Diodes",
+            "Trigger Diodes"
+        ],
+        "Bridge Rectifiers": [
+            "Single Phase and Three Phase Bridge Rectifiers",
+            "Through Hole and SMD Bridge Rectifiers",
+            "Square & In-Line Bridge Rectifiers"
+        ],
+        "Communication ICs": [
+            "RS485 Transceivers",
+            "RS232 Transceivers",
+            "CAN Chips",
+            "485 Isolation module"
+        ],
+        "Voltage Regulators": [
+            "Voltage Regulators"
+        ],
+        "Transistors": [
+            "Transistors"
+        ],
+        "MOSFETs": [
+            "MOSFETs"
+        ],
+        "Crystal": [
+            "Crystal"
+        ]
+    },
+    "PASSIVE_COMPONENTS": {
+        "Resistors": [
+            "Metal Film Resistors",
+            "Carbon Film Resistors",
+            "Power Resistors",
+            "Metal Glazed Resistors",
+            "Metal Oxide Resistors",
+            "Wire Wound Resistors",
+            "Chip Resistors Thin and Thick Film",
+            "Automotive Grade Resistors"
+        ],
+        "Capacitors": [
+            "Metalised Polyester Capacitors",
+            "Ceramic Disc HV Capacitors",
+            "MLCC Capacitors",
+            "X2 Capacitors",
+            "Film Foil Capacitors",
+            "Metalized Polyester Capacitors",
+            "Metalized Polypropylene Capacitors",
+            "Snubber / DC Link & IGBT Capacitors",
+            "Chip Capacitors"
+        ],
+        "Inductors": [
+            "RF Ceramic Inductor",
+            "Ferrite Chip Inductor",
+            "Miniature Power Inductor",
+            "Power Choke Power Inductor",
+            "SMD Metal Alloy Power Inductor",
+            "Shielding Power Inductor",
+            "Non-Shielding Power Inductor",
+            "Wire Wound Power Inductor",
+            "DIP Power Inductor",
+            "EMI Bead (CBM Series)",
+            "Common Mode Filter(CM Series)",
+            "Automotive Grade Inductor"
+        ],
+        "Fuses": [
+            "Glass Fuses UL Approved & Non UL",
+            "Ceramic Fuses",
+            "SMD Fuses",
+            "Special Fuses",
+            "Thermal Fuses",
+            "Blade Fuses",
+            "Glass Fuses Fast & Slow Blow"
+        ],
+        "Switches": [
+            "Rocker Switches",
+            "Rotary/Limit /Micro Switches",
+            "Toggle/ Rotary Switches",
+            "Micro Reset / Thumbwheel Switches"
+        ],
+        "LED Displays": [
+            "SMD / PLCC LEDS",
+            "High Power LEDS",
+            "Traffic Light LEDS",
+            "Seven Segment Displays",
+            "Power LEDS",
+            "COB LEDS",
+            "Super Flux LEDS",
+            "3MM & 5MM Diffused LEDS",
+            "Water Clear LEDS",
+            "LED Indicators"
+        ],
+        "Relays": [
+            "Relays and Relay Sockets",
+            "Reed Relays",
+            "Power Relays",
+            "Solid State Relays"
+        ],
+        "Diodes": [
+            "ESD Diodes",
+            "Schottky Diodes",
+            "Zener Diodes",
+            "Ultrafast Diodes",
+            "TVS Diodes",
+            "Superfast Diodes",
+            "HV Diodes",
+            "Trigger Diodes"
+        ],
+        "Power Cords": [
+            "Power Cords"
+        ],
+        "Fuse Holders": [
+            "Fuse Holders"
+        ],
+        "Banana Sockets": [
+            "Banana Sockets"
+        ],
+        "Banana Plugs": [
+            "Banana Plugs"
+        ],
+        "MOVs": [
+            "MOVs"
+        ]
+    },
+    "SENSORS": {
+        "Temperature Sensors": [
+            "Temperature Sensors"
+        ],
+        "Pressure Sensors": [
+            "Pressure Sensors"
+        ],
+        "Opto Sensor": [
+            "Opto Sensor"
+        ]
+    },
+    "POWER_ELECTRONICS": {
+        "Solid State Relays": [
+            "Solid State Relays"
+        ],
+        "HRC Fuses": [
+            "HRC Fuses"
+        ],
+        "Bridge Rectifiers": [
+            "Bridge Rectifiers"
+        ],
+        "Thermal Pads": [
+            "Thermal Pads"
+        ]
+    },
+    "LEDs": {
+        "LEDs for Indicators": [
+            "LEDs for Indicators"
+        ],
+        "LEDs for Lighting": [
+            "LEDs for Lighting"
+        ],
+        "LEDs for Lens/ Reflectors": [
+            "LEDs for Lens/ Reflectors"
+        ],
+        "LEDs for Drivers": [
+            "LEDs for Drivers"
+        ]
+    },
+    "CIRCUIT_PROTECTION": {
+        "Resettable fuses": [
+            "Resettable fuses"
+        ],
+        "MOVs": [
+            "MOVs"
+        ],
+        "TMOVs": [
+            "TMOVs"
+        ],
+        "Lightning protection modules": [
+            "Lightning protection modules"
+        ],
+        "Gas Discharge Tubes": [
+            "Gas Discharge Tubes"
+        ]
+    }
+}

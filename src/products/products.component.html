@@ -1,194 +1,142 @@
-<!-- src/app/product-list/product-list.component.html -->
-<div class="section-container">
-    <!-- Search bar -->
-     <div class="left-section">
-    <div class="search-bar">
-      <input 
-        type="text" 
-        [(ngModel)]="searchTerm" 
-        placeholder="Search products..." 
-        class="search-input" 
-      />
-    </div>
-  
-    <!-- Product Categories Accordion -->
-    <div class="accordion scroll-class" id="accordionCategories">
-      <!-- Active Components -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingActive">
-          <button class="accordion-button" type="button" [attr.aria-expanded]="isCategoryVisible('Active Components')" data-bs-toggle="collapse" data-bs-target="#collapseActive" aria-controls="collapseActive">
-            Active Components
-          </button>
-        </h2>
-        <div id="collapseActive" class="accordion-collapse collapse" [class.show]="isCategoryVisible('Active Components')" aria-labelledby="headingActive" data-bs-parent="#accordionCategories">
-          <div class="accordion-body">
-            <div class="product-list">
-              <ng-container *ngFor="let product of getFilteredProducts()">
-                <div *ngIf="product.category === 'Active Components'" class="product-card">
-                  <img [src]="product.imageUrl" [alt]="product.name" class="product-image" />
-                  <div class="product-info">
-                    <h3 class="product-name">{{ product.name }}</h3>
-                    <p class="product-description">{{ product.description }}</p>
-                    <input type="number" [(ngModel)]="product.quantity" min="1" placeholder="Enter quantity" class="quantity-input" />
-                    <button (click)="addToCart(product, product.quantity || 1)" class="buy-now-btn">Add to Cart</button>
-                  </div>
-                </div>
-              </ng-container>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Repeat similarly for other categories (Passive Components, Sensors, etc.) -->
-      
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingPassive">
-          <button class="accordion-button" type="button" [attr.aria-expanded]="isCategoryVisible('Passive Components')" data-bs-toggle="collapse" data-bs-target="#collapsePassive" aria-controls="collapsePassive">
-            Passive Components
-          </button>
-        </h2>
-        <div id="collapsePassive" class="accordion-collapse collapse" [class.show]="isCategoryVisible('Passive Components')" aria-labelledby="headingPassive" data-bs-parent="#accordionCategories">
-          <div class="accordion-body">
-            <div class="product-list">
-              <ng-container *ngFor="let product of getFilteredProducts()">
-                <div *ngIf="product.category === 'Passive Components'" class="product-card">
-                  <img [src]="product.imageUrl" [alt]="product.name" class="product-image" />
-                  <div class="product-info">
-                    <h3 class="product-name">{{ product.name }}</h3>
-                    <p class="product-description">{{ product.description }}</p>
-                    <input type="number" [(ngModel)]="product.quantity" min="1" placeholder="Enter quantity" class="quantity-input" />
-                    <button (click)="addToCart(product, product.quantity || 1)" class="buy-now-btn">Add to Cart</button>
-                  </div>
-                </div>
-              </ng-container>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Add more categories here... -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSensors">
-          <button class="accordion-button" type="button" [attr.aria-expanded]="isCategoryVisible('Sensors')" data-bs-toggle="collapse" data-bs-target="#collapseSensors" aria-controls="collapseSensors">
-            Sensors
-          </button>
-        </h2>
-        <div id="collapseSensors" class="accordion-collapse collapse" [class.show]="isCategoryVisible('Sensors')" aria-labelledby="headingSensors" data-bs-parent="#accordionCategories">
-          <div class="accordion-body">
-            <div class="product-list">
-              <ng-container *ngFor="let product of getFilteredProducts()">
-                <div *ngIf="product.category === 'Sensors'" class="product-card">
-                  <img [src]="product.imageUrl" [alt]="product.name" class="product-image" />
-                  <div class="product-info">
-                    <h3 class="product-name">{{ product.name }}</h3>
-                    <p class="product-description">{{ product.description }}</p>
-                    <input type="number" [(ngModel)]="product.quantity" min="1" placeholder="Enter quantity" class="quantity-input" />
-                    <button (click)="addToCart(product, product.quantity || 1)" class="buy-now-btn">Add to Cart</button>
-                  </div>
-                </div>
-              </ng-container>
-            </div>
-          </div>
-        </div>
+<div class="container">
+  <!-- Section Container -->
+  <div class="section-container">
+    <!-- Left Section -->
+    <div class="left-section">
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input
+          type="text"
+          [(ngModel)]="searchTerm"
+          placeholder="Search by name, category, or subcategory..."
+          class="form-control search-input"
+        />
+
+        <select [(ngModel)]="selectedCategory" class="form-select category-dropdown">
+          <option value="All">All</option>
+          <option *ngFor="let category of productData | keyvalue" [value]="category.key">
+            {{ category.key }}
+          </option>
+        </select>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingPower">
-          <button class="accordion-button" type="button" [attr.aria-expanded]="isCategoryVisible('Power Electronics')" data-bs-toggle="collapse" data-bs-target="#collapsePower" aria-controls="collapsePower">
-            Power Electronics
-          </button>
-        </h2>
-        <div id="collapsePower" class="accordion-collapse collapse" [class.show]="isCategoryVisible('Power Electronics')" aria-labelledby="headingPower" data-bs-parent="#accordionCategories">
-          <div class="accordion-body">
-            <div class="product-list">
-              <ng-container *ngFor="let product of getFilteredProducts()">
-                <div *ngIf="product.category === 'Power Electronics'" class="product-card">
-                  <img [src]="product.imageUrl" [alt]="product.name" class="product-image" />
-                  <div class="product-info">
-                    <h3 class="product-name">{{ product.name }}</h3>
-                    <p class="product-description">{{ product.description }}</p>
-                    <input type="number" [(ngModel)]="product.quantity" min="1" placeholder="Enter quantity" class="quantity-input" />
-                    <button (click)="addToCart(product, product.quantity || 1)" class="buy-now-btn">Add to Cart</button>
+      <!-- Product List Accordion -->
+      <div class="accordion" id="accordionCategories">
+        <ng-container *ngIf="getFilteredProducts() as filteredSubcategories">
+          <ng-container *ngFor="let subCategory of filteredSubcategories | keyvalue">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading{{ subCategory.key }}">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  [attr.data-bs-target]="'#collapse' + subCategory.key"
+                  [attr.aria-expanded]="true"
+                  [attr.aria-controls]="'collapse' + subCategory.key"
+                >
+                  {{ subCategory.key }}
+                </button>
+              </h2>
+              <div
+                id="collapse{{ subCategory.key }}"
+                class="accordion-collapse collapse show"
+                [attr.aria-labelledby]="'heading' + subCategory.key"
+                data-bs-parent="#accordionCategories"
+              >
+                <div class="accordion-body">
+                  <div class="row row-cols-1 row-cols-md-3 g-4 product-list">
+                    <ng-container *ngFor="let product of subCategory.value">
+                      <div class="col">
+                        <div class="card h-100 product-card">
+                          <img [src]="product.imageUrl" [alt]="product.name" class="card-img-top product-image" />
+                          <div class="card-body">
+                            <h5 class="card-title product-name">{{ product.name }}</h5>
+                            <p class="card-text product-description">{{ product.description }}</p>
+                          </div>
+                          <div class="card-footer">
+                            <button
+                              (click)="addToCart(product, product.quantity || 1)"
+                              class="btn btn-success w-100 buy-now-btn"
+                            >
+                              Add to Cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-container>
                   </div>
                 </div>
-              </ng-container>
+              </div>
+            </div>
+          </ng-container>
+        </ng-container>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <!-- Cart Section -->
+      <div class="cart-section">
+        <div class="cart-header">
+          <h5>Cart</h5>
+        </div>
+        <div class="cart-items">
+          <div *ngFor="let item of cart" class="mb-3">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-3">
+                  <img
+                    [src]="item.product.imageUrl"
+                    class="img-fluid rounded-start cart-item-image"
+                    [alt]="item.product.name"
+                  />
+                </div>
+                <div class="col-6">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ item.product.name }}</h5>
+                    <p class="card-text">Quantity: {{ item.quantity }}</p>
+                  </div>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-center">
+                  <button
+                    (click)="removeFromCart(item.product.id)"
+                    class="btn btn-danger remove-btn"
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingLeds">
-          <button class="accordion-button" type="button" [attr.aria-expanded]="isCategoryVisible('LEDs')" data-bs-toggle="collapse" data-bs-target="#collapseLeds" aria-controls="collapseLeds">
-            LEDs
+        <div class="cart-footer" *ngIf="cart.length > 0">
+          <button
+            (click)="showEnquiryForm = !showEnquiryForm"
+            class="btn btn-primary enquiry-btn"
+          >
+            Send Enquiry for {{ cart.length }} items
           </button>
-        </h2>
-        <div id="collapseLeds" class="accordion-collapse collapse" [class.show]="isCategoryVisible('LEDs')" aria-labelledby="headingLeds" data-bs-parent="#accordionCategories">
-          <div class="accordion-body">
-            <div class="product-list">
-              <ng-container *ngFor="let product of getFilteredProducts()">
-                <div *ngIf="product.category === 'LEDs'" class="product-card">
-                  <img [src]="product.imageUrl" [alt]="product.name" class="product-image" />
-                  <div class="product-info">
-                    <h3 class="product-name">{{ product.name }}</h3>
-                    <p class="product-description">{{ product.description }}</p>
-                    <input type="number" [(ngModel)]="product.quantity" min="1" placeholder="Enter quantity" class="quantity-input" />
-                    <button (click)="addToCart(product, product.quantity || 1)" class="buy-now-btn">Add to Cart</button>
-                  </div>
-                </div>
-              </ng-container>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingCircuit">
-          <button class="accordion-button" type="button" [attr.aria-expanded]="isCategoryVisible('Circuit Protection')" data-bs-toggle="collapse" data-bs-target="#collapseCircuit" aria-controls="collapseCircuit">
-            Circuit Protection
-          </button>
-        </h2>
-        <div id="collapseCircuit" class="accordion-collapse collapse" [class.show]="isCategoryVisible('Circuit Protection')" aria-labelledby="headingCircuit" data-bs-parent="#accordionCategories">
-          <div class="accordion-body">
-            <div class="product-list">
-              <ng-container *ngFor="let product of getFilteredProducts()">
-                <div *ngIf="product.category === 'Circuit Protection'" class="product-card">
-                  <img [src]="product.imageUrl" [alt]="product.name" class="product-image" />
-                  <div class="product-info">
-                    <h3 class="product-name">{{ product.name }}</h3>
-                    <p class="product-description">{{ product.description }}</p>
-                    <input type="number" [(ngModel)]="product.quantity" min="1" placeholder="Enter quantity" class="quantity-input" />
-                    <button (click)="addToCart(product, product.quantity || 1)" class="buy-now-btn">Add to Cart</button>
-                  </div>
-                </div>
-              </ng-container>
-            </div>
+        <div *ngIf="showEnquiryForm" class="enquiry-form">
+          <input
+            type="text"
+            [(ngModel)]="contactDetails.mobile"
+            placeholder="Mobile Number"
+            class="form-control contact-input"
+          />
+          <input
+            type="email"
+            [(ngModel)]="contactDetails.email"
+            placeholder="Email ID"
+            class="form-control contact-input"
+          />
+          <div class="enquiry-button">
+            <button (click)="submitEnquiry()" class="btn btn-primary enquiry-btn">
+              Submit
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="right-section">
-    <!-- Cart Section -->
-    <div class="cart-section">
-      <div class="cart-header">
-        <h5>Cart</h5>
-      </div>
-      <div class="cart-items">
-        <div *ngFor="let item of cart">
-          <div class="cart-item">
-            <img [src]="item.product.imageUrl" class="cart-item-image" />
-            <div class="cart-item-details">
-              <p>{{ item.product.name }}</p>
-              <p>Quantity: {{ item.quantity }}</p>
-            </div>
-            <button (click)="removeFromCart(item.product.id)" class="remove-btn">Remove</button>
-          </div>
-        </div>
-      </div>
-      <div class="cart-footer" *ngIf="getTotalQuantity() > 0">
-        <button (click)="sendEnquiry()" class="enquiry-btn">Send Enquiry for {{ getTotalQuantity() }} items</button>
-      </div>
-    </div>
-  </div>
-  </div>
-  
+</div>
