@@ -23,3 +23,7 @@ export interface Categories {
     LEDs: SubCategory;
     CIRCUIT_PROTECTION: SubCategory;
 }
+export interface ContactDetails{
+    mobile:string,
+    email:string
+}

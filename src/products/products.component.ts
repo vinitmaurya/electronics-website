@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductsService } from './products.service';
-import { CartItem, Categories, Product, SubCategory } from './products.model';
+import { CartItem, Categories, ContactDetails, Product, SubCategory } from './products.model';
 import { Category } from './products.enum';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
@@ -14,20 +14,20 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   templateUrl: './products.component.html',
   styleUrl: './products.component.css'
 })
-export class ProductsComponent implements OnInit {
+export class ProductsComponent implements OnInit, OnDestroy {
   searchTerm: string = ''; // Search term for filtering
   selectedCategory: keyof Categories | 'All' = 'All'; // "All" is a possible value
   productData: Categories | undefined; // Holds all category and product data
   cart: CartItem[] = []; // Items added to the cart
   showEnquiryForm: boolean = false; // Flag to show/hide enquiry form
-  contactDetails = { mobile: '', email: '' }; // Object to hold contact details
+  contactDetails:ContactDetails = { mobile: '', email: '' }; // Object to hold contact details
 
   constructor(private productService: ProductsService) {}
 
   ngOnInit(): void {
     // Fetch product data on initialization
     this.productService.getProductListingData().subscribe(
-      (data) => {
+      (data:Categories) => {
         this.productData = data;
         if (data) {
           this.selectedCategory = 'All'; // Default selection is "All"
@@ -37,8 +37,11 @@ export class ProductsComponent implements OnInit {
         console.error(err);
       }
     );
+    this.cart = this.productService.getCartData;
   }
-
+  ngOnDestroy(): void {
+    this.productService.setCartData = this.cart;
+  }
   // Filters products based on search term and selected category
   getFilteredProducts(): { [subCategory: string]: Product[] } | undefined {
     if (!this.productData) return undefined;
@@ -86,25 +89,16 @@ export class ProductsComponent implements OnInit {
 
   // Adds product to cart
   addToCart(product: Product, quantity: number): void {
-    const existingItem = this.cart.find((item) => item.product.id === product.id);
-    if (existingItem) {
-      existingItem.quantity += quantity;
-    } else {
-      this.cart.push({ product, quantity });
-    }
+    this.productService.addToCart(product,quantity);
   }
 
   // Removes product from cart
   removeFromCart(productId: number): void {
-    this.cart = this.cart.filter((item) => item.product.id !== productId);
+    this.productService.removeFromCart(productId);
   }
 
   // Placeholder for sending an enquiry
   submitEnquiry(): void {
-    const enquiryData = {
-      contact: this.contactDetails,
-      products: this.cart,
-    };
-    console.log(enquiryData);
+    this.productService.submitEnquiry(this.contactDetails);
   }
 }
